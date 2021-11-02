@@ -6,7 +6,17 @@ My personal dotfiles
 ```not necessairily in that order```
 
 #### MacOS
+
+
 ```bash
+# install oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+# clone and install spaceship theme for zsh
+git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
+ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
+
+# install apps with homebrew
 brew install visual-studio-code  github google-chrome insomnia android-studio hyper postico zeplin figma flipper spotify slack homebrew/cask-fonts/font-jetbrains-mono 
 ```
 - homebrew
