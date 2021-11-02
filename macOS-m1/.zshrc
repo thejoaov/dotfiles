@@ -17,10 +17,10 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 export ANDROID_NDK=$HOME/Library/Android/android-ndk-r22b/
 # export NDK_HOME=$HOME/Library/Android/android-ndk-r22b/
 export ADB=$ANDROID_HOME/platform-tools/adb
-# export JAVA_HOME=/usr/local/opt/openjdk@8
+export JAVA_HOME=/opt/homebrew/opt/openjdk@11/
 export PATH="$PATH:`pwd`/flutter/bin"
 export SPACESHIP_SKIP_2FA_UPGRADE=1
-# export PATH="/usr/local/opt/openjdk@8/bin:$PATH"
+export PATH="/opt/homebrew/opt/openjdk@11/bin:$PATH"
 
 setopt PROMPT_CR
 setopt PROMPT_SP

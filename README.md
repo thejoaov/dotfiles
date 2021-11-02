@@ -9,6 +9,12 @@ My personal dotfiles
 
 
 ```bash
+# install homebrew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+touch .zshrc
+echo 'export PATH=/opt/homebrew/bin:$PATH' > ~/.zshrc
+source ~/.zshrc
+
 # install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
@@ -17,7 +23,7 @@ git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/theme
 ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
 
 # install apps with homebrew
-brew install visual-studio-code  github google-chrome insomnia android-studio hyper postico zeplin figma flipper spotify slack homebrew/cask-fonts/font-jetbrains-mono 
+brew install visual-studio-code github google-chrome insomnia openjdk@11 android-studio hyper postico zeplin figma flipper spotify slack homebrew/cask-fonts/font-jetbrains-mono docker
 ```
 - homebrew
   - vscode
@@ -34,10 +40,10 @@ brew install visual-studio-code  github google-chrome insomnia android-studio hy
   - spotify
   - slack
   - docker
+  - openjdk 11
 - tiles or magnet (from app store)
-- openjdk 8/11
 - xcode
-- vstray
+- [vstray](https://github.com/thejoaov/vs-tray/releases)
 - nvm
 - rbenv
 - oh-my-zsh
