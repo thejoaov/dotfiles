@@ -6,14 +6,17 @@ My personal dotfiles
 ```not necessairily in that order```
 
 #### MacOS
+```bash
+brew install visual-studio-code  github google-chrome insomnia android-studio hyper postico zeplin figma flipper spotify slack homebrew/cask-fonts/font-jetbrains-mono 
+```
 - homebrew
   - vscode
+  - google chrome
   - jetbrains mono
   - github desktop
   - insomnia
   - android studio
   - hyper
-  - openjdk 8/11
   - postico
   - zeplin
   - figma
@@ -22,6 +25,7 @@ My personal dotfiles
   - slack
   - docker
 - tiles or magnet (from app store)
+- openjdk 8/11
 - xcode
 - vstray
 - nvm
@@ -30,6 +34,7 @@ My personal dotfiles
 - dotfiles and configs
 
 #### Windows
+- google chrome
 - chocolatey
   - vscode
   - jetbrains mono
@@ -47,7 +52,7 @@ My personal dotfiles
 - wsl
 
 #### Linux
-
+- google chrome
 - vscode
 - jetbrains mono
 - github desktop
