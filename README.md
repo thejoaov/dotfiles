@@ -62,7 +62,7 @@ brew install visual-studio-code github google-chrome insomnia openjdk@11 android
   - github desktop
   - slack
   - docker
-- vstray
+- [vstray](https://github.com/thejoaov/vs-tray/releases)
 - oh-my-posh
 - paths and configs in windows terminal
 - wsl
@@ -78,7 +78,7 @@ brew install visual-studio-code github google-chrome insomnia openjdk@11 android
 - spotify
 - slack
 - openjdk 8/11
-- vstray
+- [vstray](https://github.com/thejoaov/vs-tray/releases)
 - nvm
 - rbenv
 - oh-my-zsh
