@@ -7,7 +7,6 @@ My personal dotfiles
 
 #### MacOS
 
-
 ```bash
 # install homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -86,3 +85,9 @@ brew install visual-studio-code github google-chrome insomnia android-studio hyp
 - oh-my-zsh
 - docker
 - dotfiles and configs
+
+---
+```bash
+# after android studio and all android sdks instalation
+sdkmanager --update && yes | sdkmanager --licenses
+```
