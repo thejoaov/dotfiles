@@ -23,7 +23,9 @@ git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/theme
 ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
 
 # install apps with homebrew
-brew install visual-studio-code github google-chrome insomnia openjdk@11 android-studio hyper postico zeplin figma flipper spotify slack homebrew/cask-fonts/font-jetbrains-mono docker
+brew tap homebrew/cask-versions
+brew install temurin8
+brew install visual-studio-code github google-chrome insomnia android-studio hyper postico zeplin figma flipper spotify slack homebrew/cask-fonts/font-jetbrains-mono docker
 ```
 - homebrew
   - vscode
