@@ -7,6 +7,8 @@ My personal dotfiles
 
 #### MacOS
 
+##### For macs with arm architecture, first do [this](./macOS-m1/README.md).
+
 ```bash
 # install homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
