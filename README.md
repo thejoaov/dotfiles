@@ -13,7 +13,11 @@ My personal dotfiles
 # install homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 touch .zshrc
+# for m1 processor
 echo 'export PATH=/opt/homebrew/bin:$PATH' > ~/.zshrc
+# for x86 processor
+echo 'export PATH=/usr/local/homebrew/bin:$PATH' > ~/.zshrc
+
 source ~/.zshrc
 
 # install oh-my-zsh
