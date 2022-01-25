@@ -26,7 +26,7 @@ ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/the
 # install apps with homebrew
 brew tap homebrew/cask-versions
 brew install temurin8
-brew install visual-studio-code github google-chrome insomnia android-studio hyper postico zeplin figma flipper spotify slack homebrew/cask-fonts/font-jetbrains-mono docker
+brew install visual-studio-code github google-chrome insomnia android-studio hyper postico notion figma flipper spotify homebrew/cask-fonts/font-jetbrains-mono homebrew/cask/docker
 ```
 - homebrew
   - vscode
@@ -37,11 +37,10 @@ brew install visual-studio-code github google-chrome insomnia android-studio hyp
   - android studio
   - hyper
   - postico
-  - zeplin
+  - notion
   - figma
   - flipper
   - spotify
-  - slack
   - docker
   - openjdk 11
 - tiles or magnet (from app store)
