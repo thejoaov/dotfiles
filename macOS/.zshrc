@@ -3,7 +3,8 @@
 # Path to your oh-my-zsh installation.
 unset PREFIX
 export ZSH="/Users/thejoaov/.oh-my-zsh"
-export PATH=/opt/homebrew/bin:$PATH
+#export PATH=/opt/homebrew/bin:$PATH
+# [ "$(uname -m)" = "x86_64" ] && export PATH=/usr/local/homebrew/bin:$PATH || export PATH=/opt/homebrew/bin:$PATH
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export ANDROID_SDK_ROOT=/Users/thejoaov/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
