@@ -12,4 +12,10 @@ curl https://raw.githubusercontent.com/thejoaov/dotfiles/master/macOS/.hyper.js 
 rm -rf ~/.gitconfig
 curl https://raw.githubusercontent.com/thejoaov/dotfiles/master/macOS/.gitconfig > ~/.gitconfig
 
+# Install Ruby 2.7.4 with rbenv
+rbenv install 2.7.4
+rbenv global 2.7.4
+rbenv rehash
+
+# Create projects folders
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/thejoaov/dotfiles/master/macOS/configure-documents.sh)" || true
