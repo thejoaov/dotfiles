@@ -9,28 +9,15 @@ My personal dotfiles
 
 ##### For macs with arm architecture, first do [this](./macOS-m1/README.md).
 
+#### :warning: Before you run these scripts, configure Github SSH [here](https://docs.github.com/pt/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) :warning:
+
 ```bash
-# install homebrew
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-touch .zshrc
-# for m1 processor
-echo 'export PATH=/opt/homebrew/bin:$PATH' > ~/.zshrc
-# for x86 processor
-echo 'export PATH=/usr/local/homebrew/bin:$PATH' > ~/.zshrc
+# First install brew, oh-my-zsh and some applications
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/thejoaov/dotfiles/master/macOS/install.sh)"
 
-source ~/.zshrc
+# Second, configure everything
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/thejoaov/dotfiles/master/macOS/configure.sh)"
 
-# install oh-my-zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
-# clone and install spaceship theme for zsh
-git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
-ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
-
-# install apps with homebrew
-brew tap homebrew/cask-versions
-brew install temurin8
-brew install visual-studio-code github google-chrome insomnia android-studio hyper postico notion figma flipper spotify homebrew/cask-fonts/font-jetbrains-mono homebrew/cask/docker
 ```
 - homebrew
   - vscode

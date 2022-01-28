@@ -11,3 +11,5 @@ curl https://raw.githubusercontent.com/thejoaov/dotfiles/master/macOS/.hyper.js 
 
 rm -rf ~/.gitconfig
 curl https://raw.githubusercontent.com/thejoaov/dotfiles/master/macOS/.gitconfig > ~/.gitconfig
+
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/thejoaov/dotfiles/master/macOS/configure-documents.sh)" || true
