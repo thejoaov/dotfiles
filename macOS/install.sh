@@ -9,16 +9,6 @@ brew install visual-studio-code github microsoft-edge google-chrome rbenv insomn
 # Install NVM
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | zsh
 
-# Configure ZSH, oh-my-zsh, plugins and aliases
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
-git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
-ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
-
-rm -rf ~/.zshrc
-touch ~/.zshrc
-curl https://raw.githubusercontent.com/thejoaov/dotfiles/master/macOS/.zshrc > ~/.zshrc
-
 rm -rf ~/.hyper.js
 curl https://raw.githubusercontent.com/thejoaov/dotfiles/master/macOS/.hyper.js > ~/.hyper.js
 
@@ -30,3 +20,12 @@ rbenv install 2.7.4
 rbenv global 2.7.4
 rbenv rehash
 
+# Configure ZSH, oh-my-zsh, plugins and aliases
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
+ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
+
+rm -rf ~/.zshrc
+touch ~/.zshrc
+curl https://raw.githubusercontent.com/thejoaov/dotfiles/master/macOS/.zshrc > ~/.zshrc
