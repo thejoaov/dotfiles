@@ -3,8 +3,7 @@
 
 # Install brew casks
 brew tap homebrew/cask-versions
-brew install temurin8
-brew install visual-studio-code github microsoft-edge google-chrome rbenv insomnia android-studio hyper postico notion figma flipper spotify homebrew/cask-fonts/font-jetbrains-mono homebrew/cask/docker
+brew install temurin11 visual-studio-code github microsoft-edge google-chrome rbenv insomnia android-studio hyper postico notion figma flipper spotify homebrew/cask-fonts/font-jetbrains-mono homebrew/cask/docker
 
 # Install NVM
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | zsh
