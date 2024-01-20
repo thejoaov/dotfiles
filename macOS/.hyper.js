@@ -12,7 +12,7 @@ module.exports = {
     fontSize: 14,
 
     // font family with optional fallbacks
-    fontFamily: "JetBrains Mono",
+    fontFamily: ["JetBrainsMono Nerd Font", "JetBrains Mono"],
 
     // default font weight: 'normal' or 'bold'
     fontWeight: "normal",
@@ -36,14 +36,14 @@ module.exports = {
     cursorShape: "BLOCK",
 
     // set to `true` (without backticks and without quotes) for blinking cursor
-    cursorBlink: false,
+    cursorBlink: true,
 
     // color of the text
     foregroundColor: "#fff",
 
     // terminal background color
     // opacity is only supported on macOS
-    backgroundColor: "#000",
+    backgroundColor: "#191622",
 
     // terminal selection color
     selectionColor: "rgba(248,28,229,0.3)",
@@ -116,7 +116,7 @@ module.exports = {
     bell: "SOUND",
 
     // if `true` (without backticks and without quotes), selected text will automatically be copied to the clipboard
-    copyOnSelect: false,
+    copyOnSelect: true,
 
     // if `true` (without backticks and without quotes), hyper will be set as the default protocol client for SSH
     defaultSSHApp: true,
@@ -146,7 +146,7 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: ["hyper-omni-theme", "hyper-aura-theme"],
+  plugins: ["hyper-aura-theme", "hyper-transparent"],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
