@@ -3,14 +3,16 @@
 
 # Install brew casks
 brew tap homebrew/cask-versions
-brew install asdf coreutils visual-studio-code docker github google-chrome insomnia android-studio hyper postico notion flipper spotify homebrew/cask-fonts/font-jetbrains-mono homebrew/cask-fonts/font-jetbrains-mono-nerd-font
+brew install asdf coreutils visual-studio-code github google-chrome insomnia android-studio hyper postico expo-orbit notion flipper spotify watchman homebrew/cask/docker homebrew/cask-fonts/font-jetbrains-mono homebrew/cask-fonts/font-jetbrains-mono-nerd-font
+
+source ~/.zshrc
 
 # Install asdf plugins
 asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
 asdf plugin add ruby https://github.com/asdf-vm/asdf-ruby.git
-asdf plugin-add java https://github.com/halcyon/asdf-java.git
+asdf plugin add java https://github.com/halcyon/asdf-java.git
 asdf plugin add golang https://github.com/asdf-community/asdf-golang.git
-asdf plugin-add flutter
+asdf plugin add flutter
 
 # Hyper config
 rm -rf ~/.hyper.js
