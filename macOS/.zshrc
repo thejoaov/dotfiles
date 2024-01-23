@@ -1,15 +1,15 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 # Path to your oh-my-zsh installation.
-unset PREFIX
+# unset PREFIX
 export ZSH="/Users/thejoaov/.oh-my-zsh"
 export PATH=/opt/homebrew/bin:$PATH
 export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
-export OPENAI_API_KEY=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
-export JAVA_HOME="$(asdf where java)"
-export GOPATH="$(asdf where golang)/packages"
-export GOROOT="$(asdf where golang)/go"
-export FLUTTER_ROOT="$(asdf where flutter)"
+export OPENAI_API_KEY="" # Put here the key
+# export JAVA_HOME="$(asdf where java)"
+# export GOPATH="$(asdf where golang)/packages"
+# export GOROOT="$(asdf where golang)/go"
+# export FLUTTER_ROOT="$(asdf where flutter)"
 
 # [ "$(uname -m)" = "x86_64" ] && export PATH=/usr/local/homebrew/bin:$PATH || export PATH=/opt/homebrew/bin:$PATH
 export ANDROID_HOME=$HOME/Library/Android/sdk
@@ -20,13 +20,13 @@ export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 export ANDROID_NDK=$HOME/Library/Android/android-ndk-r22b/
 export ADB=$ANDROID_HOME/platform-tools/adb
-export PATH="$(asdf where flutter)/bin":"$PATH"
-export PATH="$(asdf where dart)/bin":"$PATH"
-export PATH="$(asdf where nodejs)/bin":"$PATH"
+# export PATH="$(asdf where flutter)/bin":"$PATH"
+# export PATH="$(asdf where dart)/bin":"$PATH"
+# export PATH="$(asdf where nodejs)/bin":"$PATH"
 export SPACESHIP_SKIP_2FA_UPGRADE=1
 
-setopt PROMPT_CR
-setopt PROMPT_SP
+# setopt PROMPT_CR
+# setopt PROMPT_SP
 export PROMPT_EOL_MARK=""
 export REACT_EDITOR=code
 
@@ -87,16 +87,6 @@ zplugin light zsh-users/zsh-autosuggestions
 zplugin light zsh-users/zsh-completions
 zinit light ntnyq/omz-plugin-pnpm
 
-
-
-# # NVM initialization
-# export NVM_DIR="$HOME/.nvm"
-# [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-# [ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-# rbenv initialization
-eval "$(rbenv init -)"
-
 # zsh Aliases
 alias zshrc="code ~/.zshrc"
 alias srczsh="source ~/.zshrc"
@@ -120,14 +110,9 @@ alias python="python3"
 alias pip="pip3"
 
 
-export HOMEBREW_GITHUB_API_TOKEN=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
-
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-# export PATH="$PATH:$HOME/.rvm/bin"
-
-
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+export HOMEBREW_GITHUB_API_TOKEN="" # Put here the key
 
 # echo -e "\n. $(brew --prefix asdf)/libexec/asdf.sh" >> ${ZDOTDIR:-~}/.zshrc
 
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
+# . /opt/homebrew/opt/asdf/libexec/asdf.sh
+clear
