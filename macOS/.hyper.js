@@ -17,39 +17,17 @@ module.exports = {
     // default font weight: 'normal' or 'bold'
     fontWeight: "normal",
 
-    // font weight for bold characters: 'normal' or 'bold'
-    fontWeightBold: "bold",
-
     // line height as a relative unit
     lineHeight: 1,
 
     // letter spacing as a relative unit
     letterSpacing: 0,
 
-    // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
-    cursorColor: "rgba(248,28,229,0.8)",
-
-    // terminal text color under BLOCK cursor
-    cursorAccentColor: "#000",
-
     // `'BEAM'` for |, `'UNDERLINE'` for _, `'BLOCK'` for â–ˆ
     cursorShape: "BLOCK",
 
     // set to `true` (without backticks and without quotes) for blinking cursor
     cursorBlink: true,
-
-    // color of the text
-    foregroundColor: "#fff",
-
-    // terminal background color
-    // opacity is only supported on macOS
-    backgroundColor: "#191622",
-
-    // terminal selection color
-    selectionColor: "rgba(248,28,229,0.3)",
-
-    // border color (window, tabs)
-    borderColor: "#333",
 
     // custom CSS to embed in the main window
     css: "",
@@ -69,26 +47,30 @@ module.exports = {
     // custom padding (CSS format, i.e.: `top right bottom left`)
     padding: "12px 14px",
 
-    // the full list. if you're going to provide the full color palette,
-    // including the 6 x 6 color cubes and the grayscale map, just provide
-    // an array here instead of a color map object
+    cursorColor: "#a277ff",
+    cursorAccentColor: "#110f18",
+    foregroundColor: "#edecee",
+    backgroundColor: "rgba(21, 20, 27, 0.9)",
+    selectionColor: "#a394f033",
+    borderColor: "#0f0f0f",
+    fontWeightBold: "normal",
     colors: {
-      black: "#000000",
-      red: "#C51E14",
-      green: "#1DC121",
-      yellow: "#C7C329",
-      blue: "#0A2FC4",
-      magenta: "#C839C5",
-      cyan: "#20C5C6",
-      white: "#C7C7C7",
-      lightBlack: "#686868",
-      lightRed: "#FD6F6B",
-      lightGreen: "#67F86F",
-      lightYellow: "#FFFA72",
-      lightBlue: "#6A76FB",
-      lightMagenta: "#FD7CFC",
-      lightCyan: "#68FDFE",
-      lightWhite: "#FFFFFF",
+      black: "#110f18",
+      red: "#ff6767",
+      green: "#61ffca",
+      yellow: "#ffca85",
+      blue: "#61ffca",
+      magenta: "#a277ff",
+      cyan: "#edecee",
+      white: "#edecee",
+      lightBlack: "#4d4d4d",
+      lightRed: "#ffca85",
+      lightGreen: "#a277ff",
+      lightYellow: "#ffca85",
+      lightBlue: "#a277ff",
+      lightMagenta: "#a277ff",
+      lightCyan: "#61ffca",
+      lightWhite: "#edecee",
     },
 
     // the shell to run when spawning a new session (i.e. /usr/local/bin/fish)
@@ -146,7 +128,11 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: ["hyper-aura-theme"],
+  plugins: ["hyper-vibrance"],
+
+  hyperVibrance: {
+    vibrancy: "ulta-dark",
+  },
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
