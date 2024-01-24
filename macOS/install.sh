@@ -3,7 +3,7 @@
 
 # Install brew casks
 brew tap homebrew/cask-versions
-brew install asdf coreutils visual-studio-code github google-chrome insomnia android-studio hyper postico expo-orbit notion flipper spotify watchman homebrew/cask/docker homebrew/cask-fonts/font-jetbrains-mono homebrew/cask-fonts/font-jetbrains-mono-nerd-font
+brew install gh eul asdf coreutils visual-studio-code github google-chrome insomnia android-studio hyper postico expo-orbit notion flipper spotify watchman homebrew/cask/docker homebrew/cask-fonts/font-jetbrains-mono homebrew/cask-fonts/font-jetbrains-mono-nerd-font
 
 source ~/.zshrc
 
