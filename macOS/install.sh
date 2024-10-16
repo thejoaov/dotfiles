@@ -3,7 +3,7 @@
 
 # Install brew casks
 brew tap homebrew/cask-versions
-brew install gh asdf coreutils visual-studio-code arc cursor github google-chrome microsoft-teams microsoft-edge insomnia android-studio iterm2 expo-orbit flipper spotify watchman homebrew/cask/docker font-jetbrains-mono font-jetbrains-mono-nerd-font
+brew install gh asdf coreutils visual-studio-code arc cursor github google-chrome microsoft-teams microsoft-edge insomnia android-studio iterm2 expo-orbit flipper spotify watchman homebrew/cask/docker homebrew/cask-fonts/font-jetbrains-mono homebrew/cask-fonts/font-jetbrains-mono-nerd-font
 
 source ~/.zshrc
 
@@ -23,7 +23,7 @@ rm -rf ~/.gitconfig
 curl https://raw.githubusercontent.com/thejoaov/dotfiles/master/macOS/.gitconfig > ~/.gitconfig
 
 # Configure ZSH, oh-my-zsh, plugins and aliases
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
 ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
 
