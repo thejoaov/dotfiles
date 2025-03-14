@@ -2,11 +2,14 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 # Path to your oh-my-zsh installation.
 # unset PREFIX
+
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+
 export ZSH="/Users/thejoaov/.oh-my-zsh"
 export PATH=/opt/homebrew/bin:$PATH
 export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
 export OPENAI_API_KEY="" # Put here the key
-# export JAVA_HOME="$(asdf where java)"
+export JAVA_HOME="$(asdf where java)"
 # export GOPATH="$(asdf where golang)/packages"
 # export GOROOT="$(asdf where golang)/go"
 # export FLUTTER_ROOT="$(asdf where flutter)"
@@ -28,7 +31,8 @@ export SPACESHIP_SKIP_2FA_UPGRADE=1
 # setopt PROMPT_CR
 # setopt PROMPT_SP
 export PROMPT_EOL_MARK=""
-export REACT_EDITOR=code
+export REACT_EDITOR=cursor
+export RUBY_CFLAGS="-w"
 
 ZSH_THEME="spaceship"
 plugins=(
@@ -70,6 +74,9 @@ if [[ ! -f $HOME/.zinit/bin/zinit.zsh ]]; then
 fi
 
 source "$HOME/.zinit/bin/zinit.zsh"
+fpath=(${ASDF_DATA_DIR:-$HOME/.asdf}/completions $fpath)
+# initialise completions with ZSH's compinit
+autoload -Uz compinit && compinit
 autoload -Uz _zinit
 (( ${+_comps} )) && _comps[zinit]=_zinit
 
@@ -88,7 +95,7 @@ zplugin light zsh-users/zsh-completions
 zinit light ntnyq/omz-plugin-pnpm
 
 # zsh Aliases
-alias zshrc="code ~/.zshrc"
+alias zshrc="cursor ~/.zshrc"
 alias srczsh="source ~/.zshrc"
 alias gitcfg="git config --global --edit"
 
@@ -115,4 +122,7 @@ export HOMEBREW_GITHUB_API_TOKEN="" # Put here the key
 # echo -e "\n. $(brew --prefix asdf)/libexec/asdf.sh" >> ${ZDOTDIR:-~}/.zshrc
 
 # . /opt/homebrew/opt/asdf/libexec/asdf.sh
-clear
+# . /opt/homebrew/opt/asdf/libexec/asdf.sh
+
+PATH=~/.console-ninja/.bin:$PATH
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
